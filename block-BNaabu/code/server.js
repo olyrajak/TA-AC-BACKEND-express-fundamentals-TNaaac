@@ -27,13 +27,19 @@ app.get("/about", (req, res) => {
 });
 
 app.use((req, res, next) => {
+    
     res.sendFile(__dirname + "/error.html");
+    
 });
 
 app.use((err, req, res, next) => {
+    
     res.send(err);
+    
 });
 
-app.listen(4000, () => {
-    console.log("Server listening on port 4000");
+app.listen(4020, () => {
+    
+    console.log("Server listening on port 4020");
+    
 });
