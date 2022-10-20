@@ -38,8 +38,8 @@ app.use((err, req, res, next) => {
     
 });
 
-app.listen(4020, () => {
+app.listen(4022, () => {
     
-    console.log("Server listening on port 4020");
+    console.log("Server listening on port 4022");
     
 });
